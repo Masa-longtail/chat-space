@@ -25,32 +25,44 @@
 }
 
 .user__box__name{
-  color: #ffffff;
   font-size: 16px;
 }
 
 .user__box__menu{
   display: flex;
   list-style: none;
-  color: white;
+}
+
+@mixin icon-margin () {
+  margin-left: 0.3rem;
+}
+
+.user__box__menu-edit{
+  @include icon-margin ();
+}
+
+.user__box__menu-settings{
+  @include icon-margin ();
 }
 
 
-.contents{  
+.sideContents{  
   background-color: #2f3e51;
   width: 300px;
   height: calc(100vh - 100px);
   box-sizing: border-box;
   padding-top: 20px;
+
   &__groups{
-    color: #ffffff;
-    font-weight: bold;
     padding: 0 20px;
     margin-bottom: 40px;
-    &--name{
+    overflow: scroll;
+
+    &__name{
       font-size: 15px;
     }
-    &--message{
-      font-size: 11px;}
+    &__message{
+      font-size: 11px;
+    }
   }
 }
