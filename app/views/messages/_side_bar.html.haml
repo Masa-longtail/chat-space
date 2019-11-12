@@ -1,0 +1,25 @@
+.header
+  .header__user
+    .header__user__box
+      %p.user__box__name SEO
+      %ul.user__box__menu
+        %li.user__box__menu-edit
+          =link_to "#", class: "header__btn" do
+            = icon('fas', 'edit', class: "white-icon")
+
+        %li.user__box__menu-settings
+          =link_to "#", class: "header__btn" do
+            = icon('fas', 'cog', class: "white-icon")
+  
+.contents
+  .contents__groups
+    .contents__groups--name
+      sample
+    .contents__groups--message
+      まだメッセージはありません
+
+  .contents__groups
+    .contents__groups--name
+      Good bye world
+    .contents__groups--message
+      まだメッセージはありません
