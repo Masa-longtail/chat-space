@@ -1,0 +1,25 @@
+.main-header
+  .main-header__group
+    .main-header__group__name
+      group name
+    .main-header__group__member
+      Member:
+  
+  =link_to "#", class: "group__edit__btn" do
+    .main-header__btn__text Edit
+      
+.main-message
+  .main-message__user
+    %p.main-message__user__talker takuya
+    %p.main-message__user__date 2019/10/08/19:14:39
+  .main-message__content
+    this is my first text
+
+.form
+  .form__new-message
+    .form__new-message__input-box
+      %input.input-box__text{type: "text", placeholder: "type a message"}
+      %label.input-box__image
+        = icon('fas', 'image')
+        %input.input-box__image__file{type: "file"}
+    %input.submit-btn{type: "submit", value: "Send"}
